@@ -1,0 +1,633 @@
+@font-face {
+    font-family: "flood-std";
+    src: url(./assets/Flood_Std_Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--secondary-color);
+}
+
+:root {
+    --primary-color: #c1f7d5;
+    --secondary-color: #354463;
+}
+
+.website-header {
+    padding: 35px 0;
+    ;
+}
+
+.web-content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.website-logo {
+    width: 180px;
+    /* padding: 10px 20px 10px; */
+    font-weight: bold;
+
+}
+
+.nav-links {
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 20px 0;
+}
+
+.nav-links a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    letter-spacing: -1;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.header-button {
+    padding: 10px 20px 10px;
+    font-size: 1.15rem;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+
+}
+
+.header-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    padding: 130px 0;
+    background-image: linear-gradient(180deg, rgba(53, 68, 99, 0.4), rgba(53, 68, 99, 0.4)), url(./assets/home/annie-spratt-135307-unsplash.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text-box {
+
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    position: relative;
+    background-color: white;
+    padding: 76px 64px 119px;
+    gap: 40px;
+    padding-bottom: 119px;
+    line-height: 1.3;
+}
+
+.hero-section .web-content-container{
+    align-items: start;
+}
+
+.tag {
+    width: 200px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 70px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.hero-box-heading {
+    font-size: 40px;
+}
+
+.hero-text-box a {
+    font-size: 16px;
+}
+
+.hero-text-box a:hover {
+    opacity: 0.5;
+}
+
+.hero-caption {
+    font-family: "flood-std";
+    font-size: 72px;
+    width: 396px;
+    color: white;
+    margin-top: 20px;
+}
+
+.take-action-section {
+    position: relative;
+    padding: 75px 0;
+    background-color: var(--primary-color);
+}
+
+.take-action-section .tag {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.take-action-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.take-action-box-heading {
+    font-size: 28px;
+    color: var(--secondary-color);
+    margin: 0 0 10px;
+    cursor: pointer;
+
+}
+
+.take-action-box-heading::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--secondary-color);
+    transition: width .3s;
+    margin-top: 15px;
+}
+
+.take-action-box-heading:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.whatwedo-section {
+    position: relative;
+    padding: 75px 0;
+    background-color: var(--secondary-color);
+
+}
+
+.whatwedo-section .web-content-container {
+    flex-direction: column;
+}
+
+.whatwedo-section .tag {
+    color: var(--secondary-color);
+    background-color: white;
+    top: 10%;
+    left: 15%;
+}
+
+.whatwedo-heading {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 18%;
+    left: 15%;
+    width: 1140px;
+}
+
+.whatwedo-cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+
+}
+
+.whatwedo-cards {
+    width: 27%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 15%;
+
+}
+
+.whatwedo-img {
+    width: 100%;
+    height: 225px;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.whatwedo-description {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.whatwedo-cards-heading {
+    font-size: 28px;
+}
+
+.whatwedo-cards-para {
+    width: 240px;
+    line-height: 2;
+}
+
+.whatwedo-cards-button {
+    margin-top: 10%;
+    padding: 10px 25px 10px;
+    font-size: 1.15rem;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+.whatwedo-cards-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.didyouknow-section {
+    background-image: url(./assets/home/did-you-know-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+
+}
+
+.didyouknow-section .web-content-container{
+    align-items: start;
+}
+
+.didyouknow-caption {
+    padding-left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+}
+
+.didyouknow-button {
+    padding: 13px 30px 13px;
+    font-size: 1.15rem;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    margin-top: 10%;
+}
+
+.didyouknow-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.didyouknow-conatiner {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.didyouknow-conatiner .tag {
+    width: 250px;
+}
+
+.didyouknow-conatiner-card {
+    background-color: white;
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.didyouknow-conatiner-card-left {
+    width: 60%;
+}
+
+.didyouknow-card-heading {
+    font-size: 44px;
+}
+
+.didyouknow-card-para {
+    margin-top: 5%;
+}
+
+.didyouknow-conatiner-card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon-twitter {
+    background-image: url(assets/home/iconmonstr-twitter-1.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 13px;
+    width: 32px;
+    background-color: var(--primary-color);
+    border-radius: 55%;
+}
+
+.icon-twitter:hover,.icon-facebook:hover{
+    cursor: pointer;
+}
+
+.icon-facebook {
+    background-image: url(assets/home/iconmonstr-facebook-1.png);
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px 16px;
+    background-color: var(--primary-color);
+    border-radius: 55%;
+    width: 32px;
+    height: 32px;
+}
+
+.stories {
+
+    background-color: white;
+    padding: 135px 0;
+
+}
+
+.stories .tag {
+    left: 52.5%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.stories .web-content-container {
+    position: relative;
+    width: 100%;
+    align-items: start;
+    flex-direction: column;
+    width: 1140px;
+}
+
+.sliding-window {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.pages {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.content {
+    background-color: var(--secondary-color);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 40px;
+    width: 50%;
+    padding: 60px;
+    z-index: 1;
+}
+
+
+.story-img {
+    background-image: url(assets/home/lady-baby.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    margin-left: -30px;
+    width: 55%;
+    height: 100%;
+}
+
+blockquote {
+    font-size: 26px;
+    line-height: 34px;
+    color: white;
+}
+
+.content p {
+    font-size: 14px;
+    color: white;
+}
+
+.sliding-window.active .page {
+    transform: translateX(-100%);
+}
+
+.page-selection {
+    position: absolute;
+    display: flex;
+    top: 0;
+    gap: 10px;
+}
+
+.page-select {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.page-select.active {
+    background-color: black;
+}
+
+.story-button {
+    padding: 10px 25px 10px;
+    font-size: 1.15rem;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.story-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.updates-section {
+    background-color: var(--secondary-color);
+    padding: 5%;
+}
+
+.updates-section .hero-caption {
+    width: 80%;
+    align-self: self-start;
+}
+
+.updates-section .web-content-container {
+    flex-direction: column;
+    gap: 100px;
+}
+
+.updates-container {
+    display: flex;
+    position: relative;
+    padding-left: 0;
+    gap:50px;
+}
+
+.updates-container .tag {
+    background-color: white;
+    color: var(--secondary-color);
+    width: 200px;
+    position: static;
+    transform: translate(0%);
+}
+
+.updates-container .updates-images {
+    background-image: url(assets/home/tree-planting.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+}
+
+.updates-section .web-content-container :nth-child(3) .updates-images{
+    background-image: url(assets/home/meeting.png);
+}
+
+.updates-heading {
+    color: white;
+    font-size: 44px;
+}
+
+.updates-card-description {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    padding: 0, 5%;
+    align-items: start;
+    position: relative;
+}
+
+.updates-button{
+    padding: 10px 25px 10px;
+    font-size: 1.15rem;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+.updates-button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.contact-section{
+    background-color: var(--primary-color);
+}
+
+.contact-section .web-content-container{
+    padding: 4%;
+    
+}
+.contact-text{
+    width: 45%;
+}
+
+.email{
+    padding: 2%;
+    width: 35%;
+    border-radius: 60px;
+    border: none;
+}
+
+.subscribe-button{
+    padding: 10px 30px 10px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+}
+
+.subscribe-button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.footer{
+    padding: 1%;
+}
+
+.footer .website-logo{
+    padding: 5%;
+    width: 300px;
+}
+
+.about-website{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.footer-card{
+    width: 30%;
+}
+.footer .hero-caption{
+    color: var(--secondary-color);
+    font-size: 50px;
+    width: 20%;
+    padding: 2%;
+}
+
+.footer-card-heading{
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.footer-card-description{
+    display: flex;
+    flex-direction: column;
+    gap:8px
+}
+
+.footer-card-description a{
+    text-decoration: none;
+}
