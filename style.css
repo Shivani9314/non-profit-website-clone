@@ -475,7 +475,7 @@ blockquote {
 
 .updates-section {
     background-color: var(--secondary-color);
-    padding: 5%;
+    padding: 5% 0;
 }
 
 .updates-section .hero-caption {
