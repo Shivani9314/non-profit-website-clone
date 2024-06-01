@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     color: var(--secondary-color);
+    transition: 0.2s ease-in-out;
 }
 
 :root {
@@ -18,7 +19,7 @@
 
 .website-header {
     padding: 35px 0;
-    
+
 }
 
 .web-content-container {
@@ -559,7 +560,7 @@ blockquote {
 }
 
 .contact-section .web-content-container {
-    padding: 4%;
+    padding: 70px 0gi;
 
 }
 
@@ -676,7 +677,7 @@ blockquote {
         gap: 80px;
     }
 
-    .hero-text-box{
+    .hero-text-box {
         width: 100%;
     }
 
@@ -725,11 +726,11 @@ blockquote {
         padding: 50px 0;
     }
 
-    .didyouknow-caption{
+    .didyouknow-caption {
         width: 30%;
     }
-    
-    
+
+
 
     .didyouknow-caption .hero-caption {
         font-size: 44px;
@@ -737,11 +738,11 @@ blockquote {
         width: 100%;
     }
 
-    .didyouknow-conatiner-card{
-        gap:30px;
+    .didyouknow-conatiner-card {
+        gap: 30px;
     }
 
-    .didyouknow-conatiner{
+    .didyouknow-conatiner {
         width: 65%;
     }
 
@@ -749,7 +750,7 @@ blockquote {
         width: 100%;
     }
 
-    .didyouknow-card-heading{
+    .didyouknow-card-heading {
         font-size: 28px;
     }
 
@@ -758,7 +759,7 @@ blockquote {
         align-items: center;
     }
 
-    .stories .web-content-container{
+    .stories .web-content-container {
         width: 660px;
     }
 
@@ -789,26 +790,27 @@ blockquote {
         margin-left: 0;
     }
 
-    .stories .tag{
+    .stories .tag {
         left: 32.5%;
     }
 
-    .story-button{
+    .story-button {
         left: 34%;
         bottom: -15%;
     }
 
-    .page-selection{
+    .page-selection {
         position: relative;
         top: 30px;
         left: 40%;
     }
 
-    .updates-section{
-        padding: 80px 0;;
+    .updates-section {
+        padding: 80px 0;
+        ;
     }
 
-    .updates-section .hero-caption{
+    .updates-section .hero-caption {
         font-size: 44px;
         text-align: center;
         line-height: 46px;
@@ -816,33 +818,33 @@ blockquote {
         width: 100%;
     }
 
-    .updates-heading{
+    .updates-heading {
         font-size: 28px;
         line-height: 36px;
     }
 
-    .updates-card-description{
+    .updates-card-description {
         font-size: 16px;
         line-height: 24px;
     }
 
-    .card-container{
+    .card-container {
         gap: 40px;
     }
 
 
 
-    .updates-images{
+    .updates-images {
         height: 300px;
     }
 
-    .contact-section .web-content-container{
+    .contact-section .web-content-container {
         display: grid;
         grid-template-columns: 60% 40%;
         gap: 40px;
     }
-    
-    .contact-text{
+
+    .contact-text {
         grid-column: 1 / span 2;
         grid-row: 1;
         width: 100%;
@@ -850,52 +852,376 @@ blockquote {
         line-height: 36px;
     }
 
-    .email{
+    .email {
         grid-column: 1;
         grid-row: 2;
         width: 100%;
         padding: 20px;
     }
 
-    .subscribe-button{
+    .subscribe-button {
         grid-column: 2;
         grid-row: 2;
         padding: 15px 30px 15px;
     }
 
 
-    .footer .web-content-container{
+    .footer .web-content-container {
         flex-direction: column;
         gap: 32px;
     }
 
-    .footer .website-logo{
+    .footer .website-logo {
         width: 250px;
     }
 
-    .about-website{
+    .about-website {
         width: 100%;
         justify-content: center;
     }
 
-    .footer-card{
+    .footer-card {
         width: 100%;
         align-items: center;
     }
 
-    .footer-card-heading{
+    .footer-card-heading {
         width: 100%;
         text-align: center;
     }
 
-    .footer-card-description{
+    .footer-card-description {
         width: 100%;
         text-align: center;
+    }
+
+    .footer .hero-caption {
+        display: flex;
+        justify-content: end;
+    }
+
+}
+
+
+@media (max-width:480px) {
+    .website-header {
+        padding: 25px 0;
+    }
+
+    .web-content-container {
+        width: 380px;
+    }
+
+    .website-header .web-content-container {
+        display: grid;
+        grid-template-columns: 50% 35%;
+        gap: 20px 0;
+        width: 380px;
+    }
+
+    .website-logo {
+        margin: 0 auto;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .nav-links {
+        grid-column: 2;
+        grid-row: 1;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+
+    }
+
+    .header-button {
+        grid-row: 2;
+        grid-column: 1 /span 2;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+        background-position: 0px 0px, 100% 50%;
+    }
+
+    .hero-section .tag {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-section .web-content-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text-box {
+        padding: 50px 30px 30px;
+        gap: 40px;
+    }
+
+    .hero-box-heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .hero-caption {
+        font-size: 44px;
+        line-height: 46px;
+        width: 180px;
+    }
+
+    .take-action-section {
+        padding: 60px 0;
+    }
+
+    .take-action-section .web-content-container {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 20px;
+    }
+
+    .take-action-box {
+        width: 100%;
+    }
+
+    .take-action-box-heading{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .take-action-box p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .whatwedo-section {
+        width: 100%;
+    }
+
+    .whatwedo-section .tag {
+        position: inherit;
+        margin: 0 auto;
+    }
+
+    .whatwedo-heading {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .whatwedo-img {
+        width: 80%;
+        height: 320px;
+        margin: 0 auto;
+        margin-top: -30px;
+        height: 159px;
+    }
+
+    .whatwedo-description {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .whatwedo-cards-heading {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .whatwedo-cards-para {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .didyouknow-section .web-content-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .didyouknow-caption {
+        width: 80%;
+    }
+
+    .didyouknow-conatiner {
+        width: 100%;
+    }
+
+    .didyouknow-conatiner .tag {
+        left: 50%;
+        width: 220px;
+        transform: translate(-50%, -50%);
+    }
+
+    .didyouknow-conatiner-card {
+        padding: 50px 30px;
+        gap: 30px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .didyouknow-conatiner-card-left {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .didyouknow-card-heading {
+        text-align: center;
+    }
+
+    .didyouknow-card-para {
+        text-align: center;
+    }
+
+    .didyouknow-conatiner-card-right {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+
+    .stories {
+        padding: 60px 0;
+    }
+
+    .stories .web-content-container {
+        width: 100%;
+        gap: 30px 15px;
+        height: 825px;
+        align-items: center;
+    }
+
+    .sliding-window {
+        height: 750px;
+    }
+
+
+    .stories .tag {
+        position: static;
+        align-self: center;
+    }
+
+    .pages {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .page-selection{
+        position: initial;
+    }
+
+    .content {
+        padding: 30px 32px;
+        width: 100%;
+    }
+
+    blockquote {
+        width: 100%;
+    }
+
+    .story-img {
+        background-size: contain;
+        left: 0;
+        width: 100%;
+        height: 60%;
+    }
+
+    .story-button {
+        left: 30%;
+        position: initial;
+        
+
+    }
+
+    .updates-section {
+        padding: 77px 0;
+    }
+
+    .updates-section .hero-caption{
+        margin: 0;
+    }
+
+    .updates-section .web-content-container {
+        width: 100%;
+        gap: 70px;
+    }
+
+    .updates-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-container {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-container .tag {
+        transform: translateY(-50%);
+    }
+
+    .updates-container .updates-images {
+        width: 100%;
+    }
+
+    .updates-heading {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .updates-container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .contact-section{
+        padding: 60px 0;
+    }
+
+
+    .contact-section .web-content-container {
+        width: 100%;
+        gap: 20px;
+        grid-template-columns: 65% 30%;
+        padding: 0 10px;
+    }
+
+    .contact-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .email{
+        gap: 10px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .subscribe-button{
+        padding: 15px 15px 15px;
+        font-size: 14px;
+    }
+
+    .footer{
+        padding: 56px 0;
+    }
+
+    .footer .web-content-container{
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer .website-logo{
+        text-align: center;
+    }
+
+    .about-website{
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        width: 50%;
     }
 
     .footer .hero-caption{
-        display: flex;
-        justify-content: end;
+        justify-content: center;
     }
 
 }
