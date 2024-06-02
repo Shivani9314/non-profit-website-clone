@@ -557,6 +557,7 @@ blockquote {
 
 .contact-section {
     background-color: var(--primary-color);
+    padding: 70px 0;
 }
 
 .contact-section .web-content-container {
