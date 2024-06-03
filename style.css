@@ -159,6 +159,10 @@
 
 }
 
+.take-action-box p{
+    line-height: 25px;
+}
+
 .take-action-box-heading::after {
     content: '';
     display: block;
@@ -323,6 +327,7 @@
 
 .didyouknow-card-para {
     margin-top: 5%;
+    line-height: 25px;
 }
 
 .didyouknow-conatiner-card-right {
@@ -597,8 +602,8 @@ blockquote {
 }
 
 .footer .website-logo {
-    padding: 5%;
-    width: 300px;
+    width: 180px;
+    margin-right: 60px;
 }
 
 .about-website {
@@ -622,16 +627,20 @@ blockquote {
     margin-bottom: 7px;
     padding-bottom: 7px;
     border-bottom: 1px solid var(--secondary-color);
+    width: 75%;
+    font-size: 14px;
 }
 
 .footer-card-description {
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    font-size: 14px;
 }
 
 .footer-card-description a {
     text-decoration: none;
+    font-size: 14px;
 }
 
 
