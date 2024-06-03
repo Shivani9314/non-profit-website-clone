@@ -1007,6 +1007,7 @@ blockquote {
     .whatwedo-heading {
         text-align: center;
         font-size: 22px;
+        line-height: 28px;
     }
 
     .whatwedo-img {
@@ -1086,7 +1087,7 @@ blockquote {
     .stories .web-content-container {
         width: 100%;
         gap: 30px 15px;
-        height: 825px;
+        height: 880px;
         align-items: center;
     }
 
@@ -1102,7 +1103,7 @@ blockquote {
 
     .pages {
         flex-direction: column;
-        gap: 30px;
+        gap: 100px;
     }
 
     .page-selection{
@@ -1116,6 +1117,11 @@ blockquote {
 
     blockquote {
         width: 100%;
+        text-align: center;
+    }
+
+    .content p{
+        text-align: center;
     }
 
     .story-img {
@@ -1124,6 +1130,8 @@ blockquote {
         width: 100%;
         height: 60%;
     }
+
+
 
     .story-button {
         left: 30%;
