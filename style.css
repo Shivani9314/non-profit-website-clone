@@ -601,6 +601,11 @@ blockquote {
     padding: 1%;
 }
 
+.footer .web-content-container{
+    align-items: start;
+    padding: 50px 10px;
+}
+
 .footer .website-logo {
     width: 180px;
     margin-right: 60px;
@@ -620,7 +625,7 @@ blockquote {
     color: var(--secondary-color);
     font-size: 50px;
     width: 20%;
-    padding: 2%;
+    margin: 0;
 }
 
 .footer-card-heading {
@@ -879,6 +884,7 @@ blockquote {
     .footer .web-content-container {
         flex-direction: column;
         gap: 32px;
+        align-items: start;
     }
 
     .footer .website-logo {
@@ -907,7 +913,8 @@ blockquote {
 
     .footer .hero-caption {
         display: flex;
-        justify-content: end;
+        margin: 0 0 0 auto;
+        width: 210px;
     }
 
 }
@@ -1240,6 +1247,8 @@ blockquote {
 
     .footer .hero-caption{
         justify-content: center;
+        align-items: center;
+        width: 300px;
     }
 
 }
